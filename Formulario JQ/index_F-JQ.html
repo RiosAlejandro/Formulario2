@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="autor" content="Alejandro Rios">
+
+		<title></title>
+
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="font/css/fontawesome.css">
+		<link rel="stylesheet" type="text/css" href="font/css/brands.css">
+		<link rel="stylesheet" type="text/css" href="font/css/solid.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style-JQ.css">
+		
+    	
+    </head>
+
+    <body>
+    	<form class="formulario" action="registro.php" method="post" class="registro">
+    		<div class="centar">
+	    		<div class="titulo">
+	    			<h1>Login</h1>
+	    		</div>
+	    		<div class="fly-group">
+		    		<label for="nombre" class="fly-label classic">Name</label>
+		    		<input class="alfa" type="text" name="nombre" id="nombre" placeholder="Name" required="" onblur="javascript:valnombre();">
+		    		<div id="alert">hola</div>
+				</div>
+				<div class="fly-group">
+		    		<label for="correo" class="fly-label classic">Email</label>
+		    		<input class="alfa" type="text" name="correo" id="correo" placeholder="Email" onblur="javascript:valnombre();">
+		    		<div id="alert1">hola</div>
+				</div>
+				<div class="fly-group">
+		    		<label for="contrasena" class="fly-label classic">contraseña</label>
+		    		<input class="alfa" type="password" name="contrasena" id="contrasena" placeholder="Password" required="" onblur="javascript:valnombre();">
+		    		<div id="alert2">hola</div>
+				</div>
+				<div class="fly-group">
+		    		<label for="confirmar" class="fly-label classic">Confirm Password</label>
+		    		<input class="alfa" type="password" name="confirmar" id="confirmar" placeholder="Confirm Password" required="" onblur="javascript:valnombre();">
+		    		<div id="alert3">hola</div>
+				</div>
+				<div class="animado">
+	    		<input type="checkbox" name="check" id="check" required="">
+	    		<label class="beta" for="check">I Agree To The <a href="#">Terms Of Services</a></label>
+	    		</div>
+				<div class="campo-btn">
+	    			<input class="btn" type="submit" value="Sing Up" class="btn">
+	    		</div>
+    		</div>
+    	</form>
+
+		<footer class="pie">
+            <p class="texto-pie">Formulario de<span> Alejandro Rios.</span></p>
+        </footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.min.js"></script>
+    	<script type="text/javascript" src="js/flyLabel.min.js"></script>
+		<script type="text/javascript" src="js/js-estilo-FJQ.js"></script>
+    </body>
+
+</html>

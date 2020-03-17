@@ -1,0 +1,230 @@
+html{
+	font-size: 62.5%; /**reset para rems -62.5% =10px de 16... esta cuenta es para hacer que un rem valga 10px**/
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.6rem;
+	/*line-height: 2;*/
+	background-image: url(../img/fondo_computadora2.jpg); 
+	background-position: center center;
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+/*font-family: 'Source Sans Pro', sans-serif;
+#1b42cb   #ff2f6b
+*/
+
+/** globales**/
+.contenedor{
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4{
+	font-family: ;
+}
+
+h1{
+	font-size: 4.8rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+}
+h2{
+	font-size: 4rem;
+	line-height: 1;
+}
+h3{
+	font-size: 3.2rem;
+}
+h4{
+	font-size: 2.8rem;
+}
+
+/**utilidades**/
+.centrar-texto{
+	text-align: center;
+}
+.no-margin{
+	margin:0;
+}
+ /* Formulario*/
+form{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 3rem;
+}
+.centar{
+	width: 80%;
+	margin-top: 4rem;
+	height: auto;
+}
+
+/* login */
+.titulo{
+	/*background-color: #ff2f6b;*/
+	text-align: center;
+	line-height: 0;
+	background: rgb(250,4,75);
+	background: -webkit-linear-gradient(left, rgba(250,4,75,1) 17%, rgba(255,120,159,1) 50%, rgba(255,47,107,1) 83%);
+	background: -o-linear-gradient(left, rgba(250,4,75,1) 17%, rgba(255,120,159,1) 50%, rgba(255,47,107,1) 83%);
+	background: linear-gradient(to right, rgba(250,4,75,1) 17%, rgba(255,120,159,1) 50%, rgba(255,47,107,1) 83%);
+}
+.titulo h1{
+	margin-top: 0;
+	padding: 3rem;
+	color: white;
+}
+
+/* Input */
+.alfa{
+	display: block;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	width: 100%;
+	background-color: ;
+	border: none;
+	border-bottom: 1px solid #E7D8D8;
+}
+input[type=checkbox] {
+  transform: scale(2);
+  margin-left: 4px;
+  border: 1px solid #E7D8D8;
+}
+.beta{
+	margin-left: 8px;
+	text-align: center;
+}
+label a{
+	text-decoration: none;
+	color: #1b42cb;
+}
+
+/** Efecto label-flylabel **/
+.fly-group {
+  position: relative;
+  padding-top: 2em;
+}
+
+.fly-label {
+  font-size: .9em;
+  text-transform: uppercase;
+  position: absolute;
+  transition: all .2s ease;
+  top: 1em;
+  display: inline-block;
+}
+
+.classic {
+  opacity: 0;
+  top: 2em;
+  z-index: -1;
+}
+
+
+.classic.is-active {
+  opacity: 1;
+  top: 0.5em;
+  z-index: 1;
+  color: #B6ADAD;
+}
+
+/** Checkbox **/
+[type="checkbox"]{display: none;}
+.animado{
+	margin-top: 2rem;
+}
+.animado label {
+  padding-left: 1.3em;
+  position: relative;
+}
+
+.animado label:before{
+  content: '';
+  border: solid 1px #e9e9e9;
+  border-radius: 3px;
+  width: 1.2em;
+  height: 1.2em;
+  position: absolute;
+  left: 0px;
+  transition: all 0.2s;
+  transform: rotate(0deg);
+}
+
+[type="checkbox"]:checked + label:before{
+  border-color: #E7D8D8;
+  color: #1b42cb;
+  content: '\f00c';  
+  font-family: "Font Awesome 5 Free";
+  transform: rotate(360deg);
+}
+
+/** Boton **/
+.campo-btn{
+	
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+.btn{
+	padding: 1rem;
+	right: 0;	
+	color: #1b42cb;
+	font-weight: 700;
+	/*background-color: #E7D8D8;*/
+	width: 100%;
+}
+.btn:hover{
+	background: rgb(250,4,75);
+	background: -webkit-linear-gradient(left, rgba(250,4,75,1) 17%, rgba(255,120,159,1) 50%, rgba(255,47,107,1) 83%);
+	background: -o-linear-gradient(left, rgba(250,4,75,1) 17%, rgba(255,120,159,1) 50%, rgba(255,47,107,1) 83%);
+	background: linear-gradient(to right, rgba(250,4,75,1) 17%, rgba(255,120,159,1) 50%, rgba(255,47,107,1) 83%);
+	color:white;
+	border: 2px solid #ff2f6b;
+}
+
+@media only screen and (min-width: 768px) {
+	.campo-btn{
+	display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.btn{
+		width: 25%;
+	}
+}
+
+/**Footer**/
+.pie{
+    height: 6rem;
+    width: 100% !important;
+    background-color: rgba(250,4,75,1); /*#ff2f6b*/
+    margin: 0 !important;
+}
+.texto-pie{
+    color: #1b42cb;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+.texto-pie span{
+    text-transform: uppercase;
+}
+
+#alert, #alert1 , #alert2, #alert3{
+	color: red;
+	font-size: 1.5rem;
+	display: none;
+}
